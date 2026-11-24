@@ -1,0 +1,82 @@
+media:
+  input: media
+  output: /media
+content:
+  - name: site
+    label: Contenido del sitio
+    type: file
+    path: content.json
+    format: json
+    fields:
+      - name: brand
+        label: Marca
+        type: object
+        fields:
+          - { name: name, label: Nombre del estudio, type: string }
+      - name: sections
+        label: Secciones visibles
+        type: object
+        fields:
+          - { name: about, label: About, type: boolean }
+          - { name: services, label: Services, type: boolean }
+          - { name: music, label: Music, type: boolean }
+          - { name: store, label: Sample packs, type: boolean }
+          - { name: contact, label: Contact, type: boolean }
+      - name: hero
+        label: Portada
+        type: object
+        fields:
+          - { name: title, label: Título grande, type: string }
+          - { name: tagline, label: Frase, type: string }
+          - { name: text, label: Subtítulo, type: string }
+          - { name: image, label: Foto, type: image }
+      - name: about
+        label: About
+        type: object
+        fields:
+          - { name: title, label: Título, type: string }
+          - { name: text, label: Bio, type: text }
+          - { name: image, label: Foto, type: image }
+      - { name: servicesTitle, label: Título de servicios, type: string }
+      - name: services
+        label: Servicios
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Nombre, type: string }
+          - { name: text, label: Descripción, type: text }
+      - name: music
+        label: Música
+        type: object
+        fields:
+          - { name: title, label: Título, type: string }
+          - { name: text, label: Texto, type: text }
+          - { name: soundcloud, label: Link de tu perfil de SoundCloud, type: string }
+      - name: store
+        label: Sample packs
+        type: object
+        fields:
+          - { name: title, label: Título, type: string }
+          - { name: text, label: Texto, type: text }
+          - { name: mercadopago_alias, label: Alias de MercadoPago, type: string }
+          - { name: paypal, label: PayPal (mail o link paypal.me), type: string }
+          - name: packs
+            label: Packs
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Nombre del pack, type: string }
+              - { name: desc, label: Descripción, type: text }
+              - { name: price_usd, label: Precio en USD, type: string }
+              - { name: price_ars, label: Precio en ARS, type: string }
+              - { name: cover, label: Portada, type: image }
+              - { name: preview, label: Audio de adelanto, type: file }
+      - name: contact
+        label: Contacto
+        type: object
+        fields:
+          - { name: title, label: Título, type: string }
+          - { name: email, label: Mail, type: string }
+          - { name: whatsapp, label: WhatsApp (con +54...), type: string }
+          - { name: instagram, label: Link de Instagram, type: string }
+          - { name: soundcloud, label: Link de SoundCloud, type: string }
