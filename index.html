@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Nik Music Studios</title>
+<meta name="description" content="Production, mixing, mastering and writing for heavy music. Buenos Aires, Argentina.">
+<meta name="theme-color" content="#121315">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 40'%3E%3Cpolygon points='22,0 58,20 22,40' fill='%23cfcfcf'/%3E%3Cpolygon points='0,2 0,38 33,20' fill='%23ff6a00'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Big+Shoulders+Display:wght@700;800&display=swap">
+<style>
+:root{--bg:#121315;--sf:#1a1b1e;--ln:#2b2c30;--tx:#ebe8e3;--mut:#9b9a96;--ac:#ff6a00;--d:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;--b:'Archivo',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px;background:#121315;color-scheme:dark}
+body{background:var(--bg);color:var(--tx);font:400 17px/1.65 var(--b);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+header{position:fixed;inset:0 0 auto;z-index:9;padding:env(safe-area-inset-top,0px) 5vw 0;background:rgba(18,19,21,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+header>div{display:flex;align-items:center;justify-content:space-between;height:60px;max-width:1200px;margin:auto}
+.logo{display:flex;align-items:center;gap:10px;font:800 24px var(--d);letter-spacing:.04em;text-decoration:none}
+nav{display:flex;gap:30px}nav a{font:500 15px var(--b);text-decoration:none;color:var(--mut);transition:color .2s}nav a:hover{color:var(--ac)}
+#mb{display:none;background:0;border:0;color:var(--tx);font-size:26px;cursor:pointer}
+.hero{min-height:100svh;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:4vw;padding:96px max(5vw,calc((100vw - 1200px)/2)) 6vh}
+.hero h1{font:800 clamp(64px,11vw,156px)/.86 var(--d);text-transform:uppercase}
+.tag{margin-top:28px;font:500 clamp(18px,2vw,22px)/1.4 var(--b);max-width:30ch}
+.hero .sub{color:var(--mut);margin:10px 0 34px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border:1px solid var(--ac);background:var(--ac);color:#121315;font:600 16px var(--b);text-decoration:none;cursor:pointer;transition:.2s}
+.btn:hover{background:transparent;color:var(--ac)}.btn.gh{background:transparent;color:var(--tx);border-color:#585a60}.btn.gh:hover{border-color:var(--ac);color:var(--ac)}
+.ph{height:min(80vh,800px)}.ph img{width:100%;height:100%;object-fit:cover;object-position:center 55%;box-shadow:0 30px 80px #000}
+.sec{padding:96px max(5vw,calc((100vw - 1200px)/2))}.alt{background:var(--sf)}
+h2{font:800 clamp(40px,6vw,72px)/.95 var(--d)}
+h2::after{content:"";display:block;width:56px;height:3px;background:var(--ac);margin:18px 0 40px}
+.two{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.two>img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1) contrast(1.1) brightness(.85)}
+.lead{font-size:clamp(20px,2.4vw,27px);line-height:1.5;max-width:34em}.lead a{color:var(--ac);text-underline-offset:5px}
+.sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 56px}
+.sv article{padding:28px 0;border-top:1px solid var(--ln)}
+h3{font:600 22px var(--b);margin-bottom:6px}.mut,.sv p,.intro{color:var(--mut)}.intro{max-width:40em;margin:-12px 0 28px}
+.scw{position:relative;height:450px;background:var(--bg);border:1px solid var(--ln)}.scf{position:absolute;inset:0;display:grid;place-items:center;padding:24px;text-align:center;color:var(--mut)}
+iframe{position:relative;width:100%;height:100%;border:0;background:transparent}
+.lnk{color:var(--ac);text-underline-offset:4px}
+.packs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px;margin-top:32px}
+.pack{background:var(--sf);border:1px solid var(--ln)}.alt .pack{background:var(--bg)}
+.pack>img,.nocv{width:100%;aspect-ratio:1;object-fit:cover;background:linear-gradient(135deg,#232428,#121315)}
+.pi{padding:24px}.pi audio{width:100%;margin:14px 0}.pr{font:800 30px var(--d);letter-spacing:.03em;margin:8px 0 16px}
+summary{list-style:none}summary::-webkit-details-marker{display:none}
+.pay{margin-top:18px;padding-top:18px;border-top:1px solid var(--ln);font-size:15px}.pay p{margin-bottom:14px}
+code{background:#000;padding:2px 8px;border:1px solid var(--ln);color:var(--ac)}
+.pay button{margin-left:6px;padding:3px 12px;background:0;border:1px solid #585a60;color:var(--tx);font:inherit;cursor:pointer}
+form{display:grid;gap:14px}
+input,select,textarea{width:100%;padding:14px;background:var(--bg);border:1px solid #3a3b40;color:var(--tx);font:inherit;font-size:16px;border-radius:0}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--ac)}
+.ci{display:grid;gap:12px;align-content:start;font:500 19px var(--b)}.ci a{text-decoration:none}.ci a:hover{color:var(--ac)}
+.ci p{color:var(--mut);font-size:16px;margin-bottom:8px}
+footer{padding:36px 5vw calc(36px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--ln);text-align:center;color:var(--mut);font-size:14px}
+@media(max-width:800px){.hero,.two{grid-template-columns:1fr}.ph{order:-1;height:54vh}.hero{padding-top:84px}.sec{padding:64px 5vw}#mb{display:block}nav{display:none}header.open nav{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--bg);padding:20px 5vw;gap:18px;border-bottom:1px solid var(--ln)}}
+</style></head>
+<body>
+<header><div>
+<a class="logo" href="#top"><svg width="34" height="22" viewBox="0 0 60 40" aria-hidden="true"><polygon points="22,0 58,20 22,40" fill="#cfcfcf"/><polygon points="0,2 0,38 33,20" fill="#ff6a00"/></svg><span data-b>Nik Music Studios</span></a>
+<button id="mb" aria-label="Menu">&#9776;</button>
+<nav><a href="#about" data-s="about">About</a><a href="#services" data-s="services">Services</a><a href="#music" data-s="music">Music</a><a href="#store" data-s="store">Sample packs</a><a href="#contact" data-s="contact">Contact</a></nav>
+</div></header>
+<main id="top">
+<section class="hero"><div><h1 id="h1"></h1><p class="tag" id="tg"></p><p class="sub" id="hs"></p>
+<div class="cta"><a class="btn" href="#music" data-s="music">Listen now</a><a class="btn gh" href="#contact" data-s="contact">Work with me</a></div></div>
+<div class="ph"><img id="hp" alt="Nik standing next to a stone statue on a bridge in winter"></div></section>
+<section class="sec alt" id="about" data-s="about"><h2 id="at"></h2><div class="two"><img id="ai" alt="Nik"><p class="lead" id="ab"></p></div></section>
+<section class="sec" id="services" data-s="services"><h2 id="st"></h2><div class="sv" id="sv"></div></section>
+<section class="sec alt" id="music" data-s="music"><h2 id="mt"></h2><p class="intro" id="mi"></p><div id="mu"></div></section>
+<section class="sec" id="store" data-s="store"><h2 id="pt"></h2><p class="intro" id="pi"></p><div class="packs" id="pk"></div></section>
+<section class="sec alt" id="contact" data-s="contact"><h2 id="ct"></h2><div class="two"><div class="ci" id="ci"></div>
+<form id="cf"><input name="n" placeholder="Your name" aria-label="Your name" required><input name="e" type="email" placeholder="Your email" aria-label="Your email" required><select name="s" id="sel" aria-label="Service"></select><input name="l" placeholder="Link to your song or demo" aria-label="Link to your song or demo"><input name="b" placeholder="Budget (optional)" aria-label="Budget"><textarea name="m" rows="5" placeholder="Tell me about your project" aria-label="Message" required></textarea>
+<div class="cta"><button class="btn" type="button" id="bm">Send by email</button><button class="btn gh" type="button" id="bw">Send on WhatsApp</button></div></form></div></section>
+</main>
+<footer id="ft"></footer>
+<script id="pre"></script>
+<script>
+(()=>{
+const $=s=>document.querySelector(s),Q=encodeURIComponent,E=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const P=s=>/^(https?:|data:)/.test(s)?s:String(s||'').replace(/^\//,'');
+const set=(s,v,h)=>{const e=$(s);if(e)e[h?'innerHTML':'textContent']=v};
+fetch('content.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>window.__C).then(C=>C&&render(C));
+function render(C){
+ const S=C.sections||{},n=C.brand.name,c=C.contact,st=C.store,wa=(c.whatsapp||'').replace(/\D/g,'');
+ document.querySelectorAll('[data-s]').forEach(e=>S[e.dataset.s]===false&&e.remove());
+ document.title=n;document.querySelectorAll('[data-b]').forEach(e=>e.textContent=n);
+ set('#h1',C.hero.title);set('#tg',C.hero.tagline);set('#hs',C.hero.text);$('#hp').src=P(C.hero.image);
+ set('#at',C.about.title);set('#ab',E(C.about.text).replace(/(Let(?:&#39;|’)s work together!)/i,'<a href="#contact">$1</a>'),1);
+ const ai=$('#ai');if(ai)ai.src=P(C.about.image);
+ set('#st',C.servicesTitle||'Services');
+ set('#sv',C.services.map(s=>`<article><h3>${E(s.title)}</h3><p>${E(s.text)}</p></article>`).join(''),1);
+ set('#mt',C.music.title);set('#mi',C.music.text);
+ const sc=C.music.soundcloud;
+ set('#mu',`<div class="scw"><p class="scf"><span>Loading the player. If it doesn’t show up, <a class="lnk" href="${E(sc)}" target="_blank" rel="noopener">listen on SoundCloud</a>.</span></p><iframe title="SoundCloud" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=${Q(sc)}&color=%23ff6a00&hide_related=true&show_comments=false&show_teaser=false&visual=false"></iframe></div><p style="margin-top:20px"><a class="btn" href="${E(sc)}" target="_blank" rel="noopener">Open on SoundCloud</a></p>`,1);
+ set('#pt',st.title);set('#pi',st.text);
+ const pp=st.paypal||'';
+ set('#pk',(st.packs||[]).map(k=>{
+  const pu=/^https?:/.test(pp)?pp.replace(/\/$/,'')+'/'+Q(k.price_usd):`https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=${Q(pp)}&item_name=${Q(k.title)}&amount=${Q(k.price_usd)}&currency_code=USD`;
+  const msg=Q(`Hi! I paid for the sample pack “${k.title}”. Here is my receipt:`);
+  return `<article class="pack">${k.cover?`<img src="${E(P(k.cover))}" alt="">`:'<div class="nocv"></div>'}<div class="pi"><h3>${E(k.title)}</h3><p class="mut">${E(k.desc)}</p>${k.preview?`<audio controls preload="none" src="${E(P(k.preview))}"></audio>`:''}<p class="pr">${k.price_usd?'USD '+E(k.price_usd):''}${k.price_usd&&k.price_ars?' / ':''}${k.price_ars?'ARS '+E(k.price_ars):''}</p><details><summary class="btn">Buy this pack</summary><div class="pay"><p><b>From Argentina: MercadoPago</b><br>Transfer to the alias <code>${E(st.mercadopago_alias)}</code><button type="button" data-c="${E(st.mercadopago_alias)}">Copy</button></p><p><b>International: PayPal</b><br><a class="lnk" href="${E(pu)}" target="_blank" rel="noopener">Pay with PayPal</a></p><p>Then send me your receipt on <a class="lnk" href="https://wa.me/${wa}?text=${msg}" target="_blank" rel="noopener">WhatsApp</a> and I’ll send your download link.</p></div></details></div></article>`}).join('')||'<p class="mut">New sample packs are coming soon.</p>',1);
+ set('#ct',c.title);
+ set('#ci',`<p>Tell me about your project and I’ll get back to you.</p><a href="mailto:${E(c.email)}">${E(c.email)}</a><a href="https://wa.me/${wa}" target="_blank" rel="noopener">WhatsApp ${E(c.whatsapp)}</a><a href="${E(c.instagram)}" target="_blank" rel="noopener">Instagram</a><a href="${E(c.soundcloud)}" target="_blank" rel="noopener">SoundCloud</a>`,1);
+ set('#sel',C.services.map(s=>`<option>${E(s.title)}</option>`).join(''),1);
+ set('#ft',`© ${new Date().getFullYear()} ${E(n)}. Buenos Aires, Argentina.`);
+ const f=$('#cf');
+ if(f){const tx=()=>{const d=new FormData(f);return `Name: ${d.get('n')}\nEmail: ${d.get('e')}\nService: ${d.get('s')}\nMusic link: ${d.get('l')}\nBudget: ${d.get('b')}\n\n${d.get('m')}`};
+  $('#bm').onclick=()=>f.reportValidity()&&(location.href=`mailto:${c.email}?subject=${Q('Project inquiry from '+new FormData(f).get('n'))}&body=${Q(tx())}`);
+  $('#bw').onclick=()=>f.reportValidity()&&window.open(`https://wa.me/${wa}?text=${Q(tx())}`,'_blank','noopener')}
+}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-c]');
+ if(b){const t=b.dataset.c;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{b.textContent='Copied'},()=>prompt('Copy this alias:',t))}
+ if(e.target.closest('nav a'))$('header').classList.remove('open')});
+$('#mb').onclick=()=>$('header').classList.toggle('open');
+})();
+</script></body></html>

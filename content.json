@@ -1,0 +1,61 @@
+{
+ "brand": {
+  "name": "Nik Music Studios"
+ },
+ "sections": {
+  "about": true,
+  "services": true,
+  "music": true,
+  "store": true,
+  "contact": true
+ },
+ "hero": {
+  "title": "Heavy. Punchy. Loud.",
+  "tagline": "Production, mixing, mastering and writing for heavy music.",
+  "text": "Nik Music Studios, Buenos Aires, Argentina",
+  "image": "/media/hero.jpg"
+ },
+ "about": {
+  "title": "About",
+  "text": "Hey! Nik here from Buenos Aires, Argentina. I’m a musician, producer and mixing engineer. I was made to make heavy, punchy and loud music. I’d be glad to produce and mix your next record! Let’s work together!",
+  "image": "/media/about.jpg"
+ },
+ "servicesTitle": "Services",
+ "services": [
+  {
+   "title": "Production",
+   "text": "From pre-production to final takes: arrangement, tones and direction to take your songs further."
+  },
+  {
+   "title": "Mixing",
+   "text": "Heavy, punchy and loud mixes that stay tight, clear and defined."
+  },
+  {
+   "title": "Mastering",
+   "text": "The final polish and competitive loudness, ready for every platform."
+  },
+  {
+   "title": "Writing",
+   "text": "Riffs, arrangements and complete songs written for heavy music."
+  }
+ ],
+ "music": {
+  "title": "Music",
+  "text": "Latest releases and projects, updated automatically from my SoundCloud.",
+  "soundcloud": "https://soundcloud.com/nico-alvarez-productions"
+ },
+ "store": {
+  "title": "Sample packs",
+  "text": "Heavy samples made in the studio. Pay with MercadoPago or PayPal and I’ll send your download link.",
+  "mercadopago_alias": "nico.alvarez.rosa",
+  "paypal": "nikmusicstudios@outlook.com",
+  "packs": []
+ },
+ "contact": {
+  "title": "Let’s work together",
+  "email": "nikmusicstudios@outlook.com",
+  "whatsapp": "+5491164896444",
+  "instagram": "https://www.instagram.com/nico_alvarezr/",
+  "soundcloud": "https://soundcloud.com/nico-alvarez-productions"
+ }
+}
